@@ -9,7 +9,7 @@ Bottle ships with a "ready-to-use" GAE adapter_, however, this adapter is specif
 
 Instead, just instantiate the Bottle class and assign it to the local variable 'app'::
 
-    app = Bottle(catchall=false)
+    app = Bottle(catchall=False)
 
 By default, all exceptions other than HTTPResponse or HTTPError will result in a 500 Internal Server Error response, so they won’t crash your WSGI server. You can turn off this behavior to handle exceptions in your middleware by setting ``bottle.app().catchall`` to ``False``.
 
